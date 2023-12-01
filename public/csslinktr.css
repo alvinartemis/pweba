@@ -1,0 +1,13 @@
+.head{
+    background-color: rgba(253, 48, 48, 0.767);   
+    text-align: center;
+}
+.profile-pict{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.body {
+    background-color: rgb(222, 23, 23);
+}

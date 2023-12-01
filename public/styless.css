@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(186, 0, 0);
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+  header{
+    text-align: center;
+  }
+  .g{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+  }

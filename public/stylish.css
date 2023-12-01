@@ -1,0 +1,58 @@
+body {
+
+    background-color: rgba(167, 0, 0, 0.918);
+}
+
+.textmodel {
+    font-family: Arial, sans-serif;
+}
+
+.profilepic {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.boxone {
+    text-decoration: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    font-size: 15%;
+    border: 1px;
+    margin: 0px;
+    width: 700px;
+    font-family: inherit;
+    font-weight: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: white;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.hyperlink {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.boxone:hover{
+    background-color:white;
+    color: black;
+
+}
+a:hover{
+    color: rgba(167, 0, 0, 0.918);
+}

@@ -1,0 +1,40 @@
+body {
+    font-family: "Sofia", sans-serif;
+
+}
+
+.sembunyi {
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+}
+
+.profilepicture {
+    border-radius: 50%;
+}
+
+.fotobaja {
+    border-radius: 25px;
+}
+
+.frame {
+    border: 2px solid rgb(255, 213, 0);
+    border-radius: 25px;
+    width: 260px;
+    padding: 2px;
+}
