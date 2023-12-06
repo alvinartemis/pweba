@@ -14,12 +14,12 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Muhammad Alvin - 5026221151</a>
+        <a class="navbar-brand" href='/pegawai'>Muhammad Alvin - 5026221151</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
+                <a class="nav-link" href='/pegawai/tambah'>Tambah 1 Data</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link 2</a>
@@ -31,9 +31,9 @@
                     Database
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/pegawai">Pegawai</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
+                    <a class="dropdown-item" href='/pegawai'>Pegawai</a>
+                    <a class="dropdown-item" href='/pegawai/tambah'>Tambah Data Pegawai</a>
+                    <a class="dropdown-item" href="#">Edit Data Pegawai</a>
                 </div>
             </li>
         </ul>
