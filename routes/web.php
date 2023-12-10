@@ -94,3 +94,25 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 //Week 14
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
+
+//Week 15 JANTAN
+Route::get('/keranjangbelanja', 'App\Http\Controllers\keranjangbelanjaController@homepage');
+Route::post('/keranjangbelanja/storee','App\Http\Controllers\keranjangbelanjaController@storee');
+Route::get('/keranjangbelanja/tambahh','App\Http\Controllers\keranjangbelanjaController@tambahh');
+Route::get('/keranjangbelanja/hapuss/{ID}','App\Http\Controllers\keranjangbelanjaController@hapuss');
+
+//Week 15 Betina
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index2');
+Route::post('/nilaikuliah/simpan','App\Http\Controllers\NilaiKuliahController@simpan');
+Route::get('/nilaikuliah/buat','App\Http\Controllers\NilaiKuliahController@buat');
+
+//Pra UAS
+Route::get('/sepedamotor','App\Http\Controllers\SepedamotorController@index1');
+Route::get('/sepedamotor/add','App\Http\Controllers\SepedamotorController@add');
+Route::post('/sepedamotor/storeee','App\Http\Controllers\SepedamotorController@storeee');
+Route::get('/sepedamotor/editt/{id}','App\Http\Controllers\SepedamotorController@editt');
+Route::post('/sepedamotor/updated','App\Http\Controllers\SepedamotorController@updated');
+Route::get('/sepedamotor/deleted/{id}','App\Http\Controllers\SepedamotorController@deleted');
+Route::get('/sepedamotor/find','App\Http\Controllers\SepedamotorController@find');
+Route::get('/sepedamotor/viewsp/{id}','App\Http\Controllers\SepedamotorController@viewsp');
+

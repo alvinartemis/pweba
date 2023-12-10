@@ -1,29 +1,29 @@
 @extends('master2')
 
-@section('title', 'Data Pegawai')
+@section('title', 'Data Motor')
 
 @section('konten')
     <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
 
 
     <table class="table table-hover">
-        <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-        <h3>Edit Pegawai</h3>
+        <h2><a>Muhammad Alvin Fairuz Tsany - 5026221151</a></h2>
+        <h3>Edit Data Motor</h3>
 
-        <a href="/pegawai" class="btn btn-secondary"> Kembali</a>
+        <a href="/sepedamotor" class="btn btn-secondary"> Kembali</a>
 
-        @foreach ($pegawai as $p)
-            <form action="/pegawai/update" method="post">
+        @foreach ($sepedamotor as $sp)
+            <form action="/sepedamotor/updated" method="post">
                 {{ csrf_field() }}
                 <tr>
-                    <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br />
+                    <input type="hidden" name="id" value="{{ $sp->kodesepedamotor }}"> <br />
                 <tr>
                     <div class="form-group row">
-                        <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Nama</label></td>
+                        <td><label for="merksepedamotor" class="col-xs-3 col-form-label mr-2">Merk Motor</label></td>
                         <td>
                             <div class="col-xs-9">
-                                <input type="text" required="required" class="form-control" id="nama" name="nama"
-                                    value="{{ $p->pegawai_nama }}">
+                                <input type="text" required="required" class="form-control" id="merksepedamotor" name="merksepedamotor"
+                                    value="{{ $sp->merksepedamotor }}">
                             </div>
                         </td>
                     </div>
@@ -31,11 +31,11 @@
                 <tr>
 
                     <div class="form-group row">
-                        <td><label for="jabatan" class="col-xs-3 col-form-label mr-2">Jabatan</label></td>
+                        <td><label for="stocksepedamotor" class="col-xs-3 col-form-label mr-2">Stock</label></td>
                         <td>
                             <div class="col-xs-9">
-                                <input type="text" required="required" class="form-control" id="jabatan" name="jabatan"
-                                    value="{{ $p->pegawai_jabatan }}">
+                                <input type="number" required="required" class="form-control" id="stocksepedamotor" name="stocksepedamotor"
+                                    value="{{ $sp->stocksepedamotor }}">
                             </div>
                         </td>
                     </div>
@@ -43,16 +43,16 @@
                 <tr>
 
                     <div class="form-group row">
-                        <td><label for="umur" class="col-xs-3 col-form-label mr-2">Umur</label></td>
+                        <td><label for="tersedia" class="col-xs-3 col-form-label mr-2">Persediaan</label></td>
                         <td>
                             <div class="col-xs-9">
-                                <input type="number" required="required" class="form-control" id="umur" name="umur"
-                                    value="{{ $p->pegawai_umur }}">
+                                <input type="number" required="required" class="form-control" id="tersedia" name="tersedia"
+                                    value="{{ $sp->tersedia }}">
                             </div>
                         </td>
                     </div>
                 </tr>
-                <tr>
+                {{-- <tr>
 
                     <div class="form-group row">
                         <td><label for="alamat" class="col-xs-3 col-form-label mr-2">Alamat</label></td>
@@ -62,7 +62,7 @@
                             </div>
                         </td>
                     </div>
-                </tr>
+                </tr> --}}
                 </tr>
 
                 <tr>
