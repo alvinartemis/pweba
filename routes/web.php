@@ -116,3 +116,6 @@ Route::get('/sepedamotor/deleted/{id}','App\Http\Controllers\SepedamotorControll
 Route::get('/sepedamotor/find','App\Http\Controllers\SepedamotorController@find');
 Route::get('/sepedamotor/viewsp/{id}','App\Http\Controllers\SepedamotorController@viewsp');
 
+Route::get('/kategori','App\Http\Controllers\KategoriController@utama');
+Route::post('/kategori/posted{id}','App\Http\Controllers\KategoriController@posted');
+
